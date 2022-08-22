@@ -30,7 +30,7 @@ public class FilaFIFO {
     }
 
     public int rear() {
-        return fila[indice_ultimo];
+        return indice_ultimo >= 0 ? fila[indice_ultimo] : -1;
     }
 
     public int front() {
